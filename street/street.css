@@ -1,0 +1,297 @@
+html {
+    height: 100%;
+    width: 100%;
+  }body {
+    margin: 0;
+    overflow: hidden;
+    font-family: system-ui, sans-serif;
+  }
+  
+  #buildingControls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(96, 96, 96, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .color-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  
+  .color-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 8px;
+    position: relative;
+  }
+  
+  .color-indicator {
+    width: 24px;
+    height: 6px;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    display: none;
+  }
+  
+  .color-btn[data-color="purple"] { background-color: #800080; }
+  .color-btn[data-color="green"] { background-color: #008000; }
+  .color-btn[data-color="blue"] { background-color: #0000FF; }
+  .color-btn[data-color="orange"] { background-color: #FFA500; }
+  .color-btn[data-color="white"] { background-color: #FFFFFF; border: 1px solid #000; }
+  
+  .control-content {
+    display: none;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  .control-content.active {
+    display: block;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="range"] {
+    width: 160px;
+    margin: 10px 0;
+  }
+  
+  .slider-value {
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    margin-left: 4px;
+  }
+  
+  .switch {
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  width: 48px;
+  height: 27px;
+  }
+  
+  .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  }
+  
+  .road-mode-label {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  font-size: 12px;
+  color: #333;
+    z-index: 9999;
+  }
+  
+  
+  .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  }
+  
+  .slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  }
+  
+  input:checked + .slider {
+  background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+  transform: translateX(21px);
+  }
+  
+  .slider.round {
+  border-radius: 34px;
+  }
+  
+  .slider.round:before {
+  border-radius: 50%;
+  }body {
+    margin: 0;
+    overflow: hidden;
+    font-family: system-ui, sans-serif;
+  }
+  
+  #buildingControls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(96, 96, 96, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 90vh;
+    overflow-y: auto;
+    color: white;
+  }
+  
+  #buildingControls h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  #addBuildingBtn, #removeBuildingBtn {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #removeBuildingBtn {
+    background-color: #f44336;
+    margin-left: 5px;
+  }
+  
+  .color-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  
+  .color-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0;
+    box-sizing: border-box;
+    margin-right: 8px;
+    position: relative;
+  }
+  
+  .color-indicator {
+    width: 24px;
+    height: 6px;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    display: none;
+    border-radius: 3px;
+  }
+  
+  .control-content {
+    display: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  
+  .control-content.active {
+    display: block;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="range"] {
+    width: 160px;
+    margin: 10px 0;
+  }
+  
+  .slider-value {
+    display: inline-block;
+    width: 30px;
+    text-align: right;
+    margin-left: 4px;
+  }
+  
+  .switch {
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    width: 48px;
+    height: 27px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .road-mode-label {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: white;
+    z-index: 9999;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(21px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

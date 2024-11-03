@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Store Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="style/cratedigger.css" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <div id="cratedigger">
+        <div id="cratedigger-canvas"></div>
+        <div id="cratedigger-loading">
+            <div class="info-container">
+                <div class="vertical-center">
+                    <span class="loading-label">CREAO Records</span>
+                </div>
+            </div>
+        </div>
+        <div id="cratedigger-info">
+            <div class="info-container">
+                <div class="vertical-center">
+                    <div id="cratedigger-record-artist"></div>
+                    <div id="cratedigger-record-title"></div>
+                    <div id="cratedigger-record-cover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-bar" class="noselect">
+        <div id="button-prev" class="bottom-bar-item">
+            PREVIOUS
+        </div>
+        <div id="button-show" class="bottom-bar-item">
+            SHOW
+        </div>
+        <div id="button-next" class="bottom-bar-item">
+            NEXT
+        </div>
+    </div>
+
+    <script src="scripts/dat.gui.js"></script>
+<script src="scripts/modernizr.js"></script>
+<script src="scripts/three.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>

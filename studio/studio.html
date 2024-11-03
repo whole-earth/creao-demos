@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Bedroom Scene</title>
+    <link rel="stylesheet" href="/studio/style.css">
+</head>
+<body>
+    <div id="scene-container"></div>
+    <div id="ui-container">
+        <button id="edit-mode-btn">Edit Mode</button>
+        <div id="edit-panel" style="display: none;">
+            <h3>Edit Scene</h3>
+            <div>
+                <label for="wall-color">Wall Color:</label>
+                <input type="color" id="wall-color" value="#FFFFFF">
+            </div>
+            <div>
+                <label for="poster1-upload">Poster 1:</label>
+                <input type="file" id="poster1-upload" accept=".jpg,.jpeg,.png">
+            </div>
+            <div>
+                <label for="poster2-upload">Poster 2:</label>
+                <input type="file" id="poster2-upload" accept=".jpg,.jpeg,.png">
+            </div>
+            <div>
+                <label for="lamp-toggle">Lamp:</label>
+                <input type="checkbox" id="lamp-toggle">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <script src="/studio/script.js"></script>
+</body>
+</html>
